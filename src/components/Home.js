@@ -3,7 +3,6 @@ import '../styles/Home.scss';
 import ReactDOM from 'react-dom';
 import ServiceCatalogue from './ServiceCatalogue/ServiceCatalogue';
 import $ from 'jquery';
-import Todos from './Todos';
 
 class Home extends Component {
     serviceCatalogue() {
@@ -52,7 +51,6 @@ class Home extends Component {
                         </ul>
                     </div>
                 </div>
-                <Todos />
             </div>
         )
     }
