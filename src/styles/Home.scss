@@ -1,0 +1,65 @@
+.homeContainer{
+    margin-top: 70px;
+    .row{
+        margin: 0; 
+        padding: 0;
+        line-height: 3;
+    }   
+    .contentRow .reqNow, .contentRow .findItems{
+        padding-left: 50px;
+    }
+    h4{
+        color: white;
+    }
+    h5{
+        color: #d9534f;
+    }   
+    .contentRow ul{
+        list-style: none;
+        margin-left: 20px;
+        padding: 0; 
+        li{
+            color: #CCC;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        li:hover{
+            font-size: 16px;
+        }
+    }
+}
+.searchInput{
+    float: left;
+    width: 85% !important;
+}
+.search{
+    padding: 10px !important;
+    border-radius: 0 5px 5px 0;
+    margin-top: -14px;
+    background: white;
+    border-left: 1px solid #CCC !important;
+}
+/* Breadcrumb */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    display: none;
+    li {
+        display: inline;
+        font-size: 18px;
+        a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+    }   
+    li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }   
+}

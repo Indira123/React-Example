@@ -1,0 +1,79 @@
+.knowledge, .myRequestedItem, .myIncident, .approvals{
+    background: #FFF;
+    padding-top: 20px;
+}
+.knowledge{
+    .row{
+        margin: 0; 
+        padding: 0;
+    }   
+    .search{
+        padding: 10px !important;
+        border-radius: 0 5px 5px 0;
+        margin-top: 0;
+        background: #FFF;
+        border: 1px solid #CCC !important;
+    }
+    h5{
+        text-align: center;
+        color: #999;
+    }
+} 
+.searchInput{
+    float: left;
+    width: 92% !important;
+}
+.searchInputContainer{
+    float: right;
+    .searchInput{
+        float: left;
+        width: 82% !important;
+        font-size: 15px;
+    }
+    .search{
+            padding: 11px !important;
+            border-radius: 0 5px 5px 0 !important;
+            margin-top: 0px;
+            background: white;
+            border: 1px solid #CCC !important;
+            border-left: 1px solid #CCC !important;
+    }
+}
+.myRequestedItem{
+     .card-header{
+       color: #ffffff;
+        background-color: #d9534f;
+        border-color: #d9534f;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 15px;
+     }
+    #card-body{
+        padding: 10px;
+    }
+    .react-bs-table-search-form{
+        position: absolute;
+        top: -53px;
+        left: 143px;
+    }
+}
+.myIncident{
+    .card-header{
+        color: #ffffff;
+        background-color: #d9534f;
+        border-color: #d9534f;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 15px;
+    }
+    #card-body{
+        padding: 10px;
+    }
+    .react-bs-table-search-form{
+        position: absolute;
+        top: -53px;
+        left: 143px;
+    }
+}
+.approvals .card-header{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+

@@ -1,0 +1,17 @@
+.serviceCatalogue{
+    .card-body{
+        padding: 10px;
+        min-height: 130px;
+        img{
+            width: 30%;
+        }
+    }
+    .card-header{
+        background: #d9534f
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}

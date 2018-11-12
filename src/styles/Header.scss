@@ -1,0 +1,35 @@
+ .topnav{
+    background: #eaeef3;
+    clear: both;
+    overflow: hidden;
+    border-bottom: 4px solid #d9534f;
+    ul li {
+        float: left;
+        color: #1b5c7d;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        a{
+            color: #1b5c7d;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+    li:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    li.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .logo{
+        width: 235px;
+        padding: 20px;
+        float: left;
+    }
+    .navOptions{
+        float: right;
+        margin-top: 5px; 
+    }
+ }
