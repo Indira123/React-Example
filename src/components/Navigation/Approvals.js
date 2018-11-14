@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import myApproval from '../../json/approvals.json';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import '../../styles/navigation.scss';
 
 class Approvals extends Component {
     render() {

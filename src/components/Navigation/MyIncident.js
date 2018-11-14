@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import myIncident from '../../json/myincident.json';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import '../../styles/navigation.scss';
 
 class MyIncident extends Component {
     componentDidMount() {

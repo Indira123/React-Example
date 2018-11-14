@@ -24,42 +24,40 @@ class Header extends Component {
     home() {
         $('body').css('background-image', "url(" + url + ")");
         $('.breadcrumb').hide();
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<Home />, document.getElementById('ContentWrapper'));
+        //$('#ContentWrapper').empty();
+        //ReactDOM.render(<Home />, document.getElementById('ContentWrapper'));
     }
-    ServiceCatalogue() {
+    /*ServiceCatalogue() {
         $('body').css('background', 'none');
         $('.breadcrumb').show();
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<ServiceCatalogue />, document.getElementById('ContentWrapper'));
+        $('#ContentWrapper').empty().append('<div id="serviceCatalogue"></div>')
+        ReactDOM.render(<ServiceCatalogue />, document.getElementById('serviceCatalogue'));
     }
     CanWeHelp() {
         $('body').css('background', 'none');
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<CanWeHelp />, document.getElementById('ContentWrapper'));
+        $('#ContentWrapper').empty().append('<div id="canWehelp"></div>')
+        ReactDOM.render(<CanWeHelp />, document.getElementById('canWehelp'));
     }
     Facilities() {
         $('body').css('background', 'none');
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<Facilities />, document.getElementById('ContentWrapper'));
+        $('#ContentWrapper').empty().append('<div id="facilities"></div>')
+        ReactDOM.render(<Facilities />, document.getElementById('facilities'));
     }
     HR() {
         $('body').css('background', 'none');
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<HR />, document.getElementById('ContentWrapper'));
+        $('#ContentWrapper').empty().append('<div id="HR"></div>')
+        ReactDOM.render(<HR />, document.getElementById('HR'));
     }
     IT() {
         $('body').css('background', 'none');
-        ReactDOM.unmountComponentAtNode(document.getElementById('ContentWrapper'));
-        ReactDOM.render(<IT />, document.getElementById('ContentWrapper'));
+        $('#ContentWrapper').empty().append('<div id="IT"></div>')
+        ReactDOM.render(<IT />, document.getElementById('IT'));
     }
-
-
     liveChat() {
-        const w = window.open("", "popupWindow", "width=600, height=400, scrollbars=yes");
-        const $w = $(w.document.body);
-        $w.html("<h2>Welcome to Service Desk Chat</h2><h6>How can we help you</h6><input type='text'/><button class='btn btn-primary'>Send</button>");
-    }
+        //const w = window.open("", "popupWindow", "width=600, height=400, scrollbars=yes");
+        //const $w = $(w.document.body);
+        //$w.html("<h2>Welcome to Service Desk Chat</h2><h6>How can we help you</h6><input type='text'/><button class='btn btn-primary'>Send</button>");
+    }*/
     render() {
         return (
             <header>
@@ -76,14 +74,14 @@ class Header extends Component {
                                 <li onClick={this.knowledge} alt='LiveChat'><Link to="LiveChat" onClick={this.liveChat}>Live Chat</Link></li>
                             </ul>
                         </nav>
-                        <ul className="breadcrumb">
-                            <li onClick={this.home} alt='Home'><Link to="/">Home</Link></li>
-                            <li onClick={this.ServiceCatalogue}><Link to="/ServiceCatalogue">Service Catalogue</Link></li>
-                            <li onClick={this.CanWeHelp}><Link to="/CanWeHelp">Can we help you? </Link></li>
-                            <li onClick={this.Facilities}><Link to="/Facilities">Facilities</Link></li>
-                            <li onClick={this.HR}><Link to="/HR">HR</Link></li>
-                            <li onClick={this.IT}><Link to="/IT">IT</Link></li>
-                        </ul>
+                        {/*<ul className="breadcrumb">
+                            <li onClick={this.home} alt='Home'>Home</li>
+                            <li onClick={this.ServiceCatalogue}>Service Catalogue</li>
+                            <li onClick={this.CanWeHelp}>Can we help you?</li>
+                            <li onClick={this.Facilities}>Facilities</li>
+                            <li onClick={this.HR}>HR</li>
+                            <li onClick={this.IT}>IT</li>
+                        </ul>*/}
                         <div id='ContentWrapper' style={{ clear: 'both' }}>
                             <Route exact path="/" component={Home} />
                             <Route path="/Knowledge" component={Knowledge} />

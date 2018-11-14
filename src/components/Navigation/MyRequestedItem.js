@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/js/bootstrap';
 import myReqItem from '../../json/myReqItem.json';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import '../../styles/navigation.scss';
 
 class MyRequestedItem extends Component {
     componentDidMount() {
@@ -17,6 +18,7 @@ class MyRequestedItem extends Component {
         };
         return (
             <div className='myRequestedItem container'>
+                <h2>Using React Bootstrap Datatable</h2>
                 <div className="card">
                     <div className="card-header searchInputContainer"><span className='fa fa-bars options'> Requested Items</span>
                     </div>

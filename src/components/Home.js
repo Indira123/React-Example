@@ -2,14 +2,20 @@ import React, { Component } from 'react';
 import '../styles/Home.scss';
 import ReactDOM from 'react-dom';
 import ServiceCatalogue from './ServiceCatalogue/ServiceCatalogue';
+import url from '../images/index-bg.png'
 import $ from 'jquery';
 
 class Home extends Component {
-    serviceCatalogue() {
+    componentWillMount() {
+        $('body').css('background-image', "url(" + url + ")");
+        $('.breadcrumb').hide();
+    }
+    /*serviceCatalogue() {
         $('body').css('background', 'none');
         $('.breadcrumb').show();
-        ReactDOM.render(<ServiceCatalogue />, document.getElementById('ContentWrapper'));
-    }
+        $('#ContentWrapper').empty().append('<div id="serviceCatalogue"></div>')
+        ReactDOM.render(<ServiceCatalogue />, document.getElementById('serviceCatalogue'));
+    }*/
     render() {
         return (
             <div className='homeContainer'>
@@ -25,7 +31,7 @@ class Home extends Component {
                 <br />
                 <div className='row contentRow'>
                     <div className='col-md-4 col-lg-4 reqNow'>
-                        <h4 onClick={this.serviceCatalogue}>Request Now</h4>
+                        <h4>Request Now</h4>
                         <h5>Browse the Catalog</h5>
                         <ul>
                             <li><span className='fa fa-sitemap grow'></span> Information Technology</li>
